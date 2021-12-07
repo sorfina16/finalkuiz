@@ -1,0 +1,62 @@
+<html>
+
+<link rel="stylesheet"  href="borang.css">
+<link rel="stylesheet"  href="button.css">
+<link rel="stylesheet" href="borang.css">
+<link rel="stylesheet" href="button.css">
+<style type="text/css">
+		body{
+	background-image: url(paper.jpg);
+}
+
+iframe.header{
+	width: 700px;
+	height: 50px;
+	border-radius: 10px 10px 0 0 ;
+	float: left;
+}
+
+iframe.menu{
+	clear: left;
+	float: left;
+	position: relative;
+	border: none;
+	border-radius: 0 0 0 15px;
+	width: 170px;
+	height: 500px;
+}
+
+iframe.kandungan{
+	float: left;
+	position:relative;
+	border: none;
+	border-radius: 0 0 10px 0;
+	width: 530px;
+	height: 500px;
+}
+	</style>
+<head>
+	<title> IMPORT DATA </title>
+</head>
+<body>
+	<h3 class ="panjang"> IMPORT DATA </h3>
+	<form class="panjang" action="import.php" method="POST" enctype="multipart/form-data" class="import">
+		<table>
+			<tr>
+				<td> Jadual </td>
+				<td>
+					<select name="namatable">
+						<option>pelajar</option>
+						<option>soalan</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td> Nama Fail</td>
+				<td><input type = "file" name="namafail" accept=".txt"></td>
+			</tr>
+		</table>
+		<button class="import"type="submit">Import</button>
+	</form>
+</body>
+</html>

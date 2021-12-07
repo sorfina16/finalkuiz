@@ -1,0 +1,74 @@
+
+<html>
+<head>
+	<title> KEMASKINI SOALAN </title>
+		<link rel="stylesheet" type="text/css" href="borang.css">
+	<link rel="stylesheet" type="text/css" href="button.css">
+	<style type="text/css">
+		body{
+	background-image: url(wood.jpg);
+}
+
+iframe.header{
+	width: 700px;
+	height: 50px;
+	border-radius: 10px 10px 0 0 ;
+	float: left;
+}
+
+iframe.menu{
+	clear: left;
+	float: left;
+	position: relative;
+	border: none;
+	border-radius: 0 0 0 15px;
+	width: 170px;
+	height: 500px;
+}
+
+iframe.kandungan{
+	float: left;
+	position:relative;
+	border: none;
+	border-radius: 0 0 10px 0;
+	width: 530px;
+	height: 500px;
+}
+	</style>
+</head>
+<body>
+	<h3 class="panjang"> KEMASKINI SOALAN </h3>
+	<form class="panjang" action = "soalan_update.php" method="post">
+		<table>
+			<tr>
+				<td> ID Soalan </td>
+				<td><input type= "text" name="idsoalan"></td>
+			</tr>
+			<tr>
+				<td> Nama Soalan </td>
+				<td><input type="text" name="namasoalan"></td>
+			</tr>
+			<tr>
+				<td> Pilihan A </td>
+				<td><input type="text" name="pilihana"></td>
+			</tr>
+			<tr>
+				<td> Pilihan B </td>
+				<td><input type="text" name="pilihanb"></td>
+			</tr>
+			<tr>
+				<td> Pilihan C </td>
+				<td><input type="text" name="pilihanc"></td>
+			</tr>
+			<tr>
+				<td> Jawapan </td>
+				<td><input type="text" name="jawapan"></td>
+			</tr>
+			<tr>
+				<td> ID Guru </td>
+				<td><input type="text" name="idguru"></td>
+			</tr>
+		</table>
+		<button type="submit" class="tambah"> tambah </button>
+</body>
+</html>

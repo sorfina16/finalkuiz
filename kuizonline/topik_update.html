@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="borang.css">
+<link rel="stylesheet" href="button.css">
+<h3 class="panjang">KEMASKINI TOPIK</h3>
+<form class="panjang" action="topik_update.php" method="post">
+    <table>
+        <tr>
+        <td class="warna">ID Topik</td>
+                <td><input type="text" name="idtopik" placeholder="T01" pattern="[A-Z0-9]{3}"oninvalid="this.setCustomValidity('Sila masukkan 3 aksara')" oninput="this.setCustomValidity('')"required>
+                </td>
+        </tr>
+        <tr>
+            <td class="warna">Nama Topik</td>
+            <td><input type="text" name="namatopik"></td>
+        </tr>
+    </table>
+    <button  class="update" type="submit">Update</button>
+</form>
+    <br>
+    
+    <center>
+        <button class=biru onclick="tukar_warna(0)">Biru</button>
+        <button class=hijau onclick="tukar_warna(1)">Hijau</button>
+        <button class=merah onclick="tukar_warna(2)">Merah</button>
+        <button class=hitam onclick="tukar_warna(3)">Hitam</button>
+    </center>
+    
+    <script>
+    
+    function tukar_warna(n){
+       var warna= ["Blue","Green","Red","Black"];
+       var teks = document.getElementsByClassName("warna");
+       for (var i = 0; i <teks.length; i++)
+          teks[i].style.color = warna[n];
+    }
+    
+    </script>

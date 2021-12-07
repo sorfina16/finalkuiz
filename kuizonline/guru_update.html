@@ -1,0 +1,62 @@
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="borang.css">
+<link rel="stylesheet" type="text/css" href="button.css">
+	<title> KEMASKINI GURU</title>
+<style type="text/css">
+		body{
+	background-image: url(wood.jpg);
+
+}
+
+iframe.header{
+	width: 700px;
+	height: 50px;
+	border-radius: 10px 10px 0 0 ;
+	float: left;
+}
+
+iframe.menu{
+	clear: left;
+	float: left;
+	position: relative;
+	border: none;
+	border-radius: 0 0 0 15px;
+	width: 170px;
+	height: 500px;
+}
+
+iframe.kandungan{
+	float: left;
+	position:relative;
+	border: none;
+	border-radius: 0 0 10px 0;
+	width: 530px;
+	height: 500px;
+}
+	</style>
+</head>
+<body>
+<h3 class="panjang"> KEMASKINI GURU </h3>
+<!-- Pengekodan untuk mendapatkan input daripada pengguna -->
+<form class="panjang"action = "guru_update.php" method = "post">
+	<table class="panjang">
+		<tr> 
+			<td> ID Guru </td>
+			<td><input type = "text" name = "idguru"></td>
+		</tr>
+		<tr>
+			<td> Nama </td>
+			<td><input type = "text" name = "namaguru"></td>
+		</tr>
+		<tr>
+			<td> Password </td>
+			<td><input type = "text" name ="password"></td>
+		</tr>
+	</table>
+	<button class="signup" type = "submit"> Kemaskini </button>
+</form>
+
+</body>
+</html>
